@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>랜덤함수</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function(){
+            var backColor=$('body');
+            setInterval(backGroundFandom,200);
+
+            function backGroundFandom(){
+                var colorR=Math.round(Math.random()*256);
+                var colorG=Math.round(Math.random()*256);
+                var colorB=Math.round(Math.random()*256);
+                console.log(colorR);
+                console.log(colorG);
+                console.log(colorB);
+                backColor.css('background-color','rgb('+colorR+','+colorG+','+colorB+')');
+            }
+        })
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

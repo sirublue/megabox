@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>채팅</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+    $(function(){
+        var msgBox=$('div');
+        var inputBox=$('input');
+        $("input").on('keydown',function(e){
+            // console.log(e.keyCode);
+            if(e.keyCode==13){
+                msgBox.append(inputBox.val()+'<br>');
+                tmp=inputBox.val();
+                inputBox.val('').focus();
+                if(tmp.match('안녕')){
+                msgBox.append('저도 안녕합니다<br>')}
+            }
+        })
+    })
+    </script>
+    <style>
+        div{width:500px;height:500px;border:1px solid saddlebrown;}
+    </style>
+</head>
+<body>
+    <div></div>
+    <input type="text">
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>그리드</title>
+    <style>
+        .grid-container{display:grid;grid-template-columns:70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px ;grid-gap:10px;
+            background:pink;padding:5px;box-sizing:border-box;}
+        .grid-container>div{background:orchid;text-align:center;padding:10px 0;;font-size:24px;color:white;}
+        /* #item01{grid-column-start:1;grid-column-end:5;
+            grid-column-end:1/5; grid-row:1/2;} */
+        /* #item04{grid-area:2/2/4/5;} */
+        #item01{grid-area:1/1/2/13;}
+        #item02{grid-area:2/1/4/3;}
+        #item03{grid-area:2/3/3/10;}
+        #item04{grid-area:2/9/3/13;}
+        #item05{grid-area:3/3/4/13;}
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div id="item01">h</div>
+        <div id="item02">m</div>
+        <div id="item03">s</div>
+        <div id="item04">s</div>
+        <div id="item05">f</div>
+
+    </div>
+</body>
+</html>
