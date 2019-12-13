@@ -399,6 +399,8 @@
             /* grand style */
             #grand{height:243px;}
             #grand_open{height:243px;}
+            .grand_txt{bottom:-150px;}
+            .grand_txt>.re_open{width:43%;}
             .grand_txt>li:last-child{display:none;}
             #grand_date{top:25%;}
 
